@@ -1,0 +1,27 @@
+nav {
+    margin-bottom: 1em;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid gray;
+    background-color: black;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 92%, aliceblue);
+}
+
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul li {
+    margin: 10px 25px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    white-space: nowrap;
+}
