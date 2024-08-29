@@ -31,10 +31,15 @@ h1 {
     text-shadow: 3px 3px 2px black;
 }
 
+h2,
+p {
+    margin-bottom: 0.8em;
+}
 hr {
     border: 0px;
     border-bottom: 1px solid rgba(255, 69, 0, 0.5);
     padding: 6px 0;
+    margin: 24px 0;
 }
 
 /* estilos generales */
@@ -116,3 +121,24 @@ ul li a:hover {
     grid-row: 3;
 }
 
+.boton-vinculo {
+    display: inline-block;
+    padding: 5px 45px;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+
+.boton-vinculo:hover {
+    text-shadow: 0 0 5px gray;
+    box-shadow: 0 0 4px gray;
+    transform: scale(90%);
+}
+
+/* colores */
+.rojo {
+    color: crimson;
+}
