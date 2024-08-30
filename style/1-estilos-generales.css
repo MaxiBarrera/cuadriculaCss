@@ -49,13 +49,6 @@ hr {
 
 /* estilos generales */
 
-nav {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background-color: var(--fondo);
-}
-
 .cont-img {
     position: relative;
 }
@@ -69,12 +62,10 @@ nav {
 .titulo-programador {
     font-family: fuente-header;
     font-size: 2.5rem;
-    position: absolute;
     z-index: 1;
-    left: 23%;
-    top: 88%;
     color: lightseagreen;
     text-shadow: 0 0 10px blue;
+    text-align: center;
 }
 
 main {
@@ -135,3 +126,4 @@ main {
 .rojo {
     color: crimson;
 }
+
