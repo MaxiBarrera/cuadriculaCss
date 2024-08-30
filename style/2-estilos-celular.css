@@ -1,13 +1,31 @@
-.nav-grande {
-    display: none;
-}
-
 .nav-chico {
+    border: 1px solid white;
+    display: flex;
+    /* display: inline-block; */
+}
+
+.bar {
+    border: 1px solid white;
+    font-size: 1.5rem;
+}
+.navegador-horizontal {
+    border: 1px solid white;
+    list-style: none;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+
+.nav-chico:hover .bar {
     display: none;
 }
 
-.loco {
-    margin-left: 20px;
-    margin-top: 20px;
+.nav-chico:hover .navegador-horizontal {
+    display: block;
 }
 
+.boton-bar {
+    display: block;
+    background-color: aliceblue;
+    padding: 20px;
+}
