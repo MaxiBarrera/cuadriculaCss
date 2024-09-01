@@ -1,31 +1,45 @@
 .nav-chico {
-    border: 1px solid white;
     display: flex;
-    /* display: inline-block; */
+    margin: 20px;
+    line-height: 1rem;
 }
 
-.bar {
-    border: 1px solid white;
-    font-size: 1.5rem;
-}
 .navegador-horizontal {
-    border: 1px solid white;
+    display: flex;
     list-style: none;
-    display: none;
-    position: fixed;
-    top: 0;
-}
-
-.nav-chico:hover .bar {
-    display: none;
-}
-
-.nav-chico:hover .navegador-horizontal {
-    display: block;
+    text-align: center;
+    justify-content: space-around;
 }
 
 .boton-bar {
-    display: block;
-    background-color: aliceblue;
-    padding: 20px;
+    text-decoration: none;
+    color: aliceblue;
 }
+
+.bar1 {
+    color: orangered;
+    text-shadow: 0 0 4px orangered;
+}
+
+.bar2:hover,
+.bar3:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px aliceblue;
+}
+
+footer {
+    width: 92%;
+    margin: auto;
+}
+
+.enlaces {
+    color: black;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 6px 8px;
+    text-shadow: 0 0 2px black;
+    margin: 24px 6px;
+    box-shadow: 0 0 8px black;
+    float: right;
+}
+
