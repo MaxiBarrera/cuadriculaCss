@@ -56,7 +56,7 @@ hr {
     display: block;
     width: 92%;
     margin: auto;
-    filter: blur(0.8px);
+    filter: blur(0.5px);
 }
 
 .titulo-programador {
@@ -75,7 +75,7 @@ main {
     font-size: 0.8rem;
 }
 
-.caja-grid1 {
+.caja-grid {
     border: 2px solid orangered;
     display: grid;
     gap: 10px;
@@ -90,17 +90,17 @@ main {
     font-size: 1.2rem;
 }
 
-.item1 {
+.aitem1 {
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 
-.item2 {
+.aitem2 {
     grid-column: 3;
     grid-row: 1 / span 2;
 }
 
-.item5 {
+.aitem5 {
     grid-column: 1 / span 3;
     grid-row: 3;
 }
@@ -126,4 +126,3 @@ main {
 .rojo {
     color: crimson;
 }
-
