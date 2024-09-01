@@ -1,24 +1,33 @@
 .nav-chico {
-    display: flex;
-    margin: 20px;
+    width: 100%;
     line-height: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .navegador-horizontal {
     display: flex;
     list-style: none;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 36px;
+    padding: 10px 0;
 }
 
 .boton-bar {
     text-decoration: none;
     color: aliceblue;
+    font-size: 1rem;
 }
 
 .bar1 {
     color: orangered;
     text-shadow: 0 0 4px orangered;
+    border: 1px solid orangered;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
 .bar2:hover,
@@ -42,4 +51,6 @@ footer {
     box-shadow: 0 0 8px black;
     float: right;
 }
-
+header {
+    margin-top: 60px;
+}
