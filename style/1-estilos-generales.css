@@ -95,7 +95,7 @@ main {
     color: aliceblue;
     border-radius: 10px;
     text-decoration: none;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
     transition: 0.5s;
 }
 
@@ -112,6 +112,11 @@ main {
 .purpura {
     color: rgb(236, 145, 236);
 }
+
+.verde {
+    color: rgb(112, 236, 112);
+}
+
 
 .verde {
     color: rgb(112, 236, 112);
