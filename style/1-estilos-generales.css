@@ -12,6 +12,11 @@
     src: url(../fonts/Merienda-Regular.ttf);
 }
 
+@font-face {
+    font-family: fuente-pc;
+    src: url(../fonts/RobotoMono-ExtraLight.ttf);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -47,6 +52,14 @@ hr {
     margin: 24px 0;
 }
 
+h3 {
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+pre {
+    font-family: fuente-pc;
+}
 /* estilos generales */
 
 .cont-img {
@@ -75,36 +88,6 @@ main {
     font-size: 0.8rem;
 }
 
-.caja-grid {
-    border: 2px solid orangered;
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-}
-
-.item {
-    background-color: aliceblue;
-    color: black;
-    text-align: center;
-    padding: 1.2em;
-    font-size: 1.2rem;
-}
-
-.aitem1 {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-}
-
-.aitem2 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-}
-
-.aitem5 {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
-
 .boton-vinculo {
     display: inline-block;
     padding: 5px 45px;
@@ -117,12 +100,19 @@ main {
 }
 
 .boton-vinculo:hover {
-    text-shadow: 0 0 5px gray;
-    box-shadow: 0 0 4px gray;
-    transform: scale(90%);
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 4px white;
+    transform: scale(85%);
 }
 
 /* colores */
 .rojo {
-    color: crimson;
+    color: rgb(241, 116, 141);
+}
+.purpura {
+    color: rgb(236, 145, 236);
+}
+
+.verde {
+    color: rgb(112, 236, 112);
 }
