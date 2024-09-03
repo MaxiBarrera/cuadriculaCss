@@ -54,3 +54,53 @@ footer {
 header {
     margin-top: 60px;
 }
+
+.container-grid1 {
+    background-color: orangered;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+}
+
+.container-grid1 > div {
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.aitem1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.aitem2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.aitem5 {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.tabla-navegadores {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 4px crimson;
+}
+
+.borde-caja {
+    background-color: rgb(49, 47, 47);
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.fondo-caja {
+    background-color: var(--fondo);
+    padding: 16px 16px 0;
+    border-left: 5px solid rgb(63, 62, 62);
+    border-radius: 10px;
+}
