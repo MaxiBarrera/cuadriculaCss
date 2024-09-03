@@ -15,13 +15,13 @@
         <nav class="nav-chico">
             <ul class="navegador-horizontal">
                 <li>
-                    <a class="boton-bar bar1" href="#">Paso 1</a>
+                    <a class="boton-bar bar1" href="#">Grid Intro</a>
                 </li>
                 <li>
-                    <a class="boton-bar bar2" href="#">Paso 2</a>
+                    <a class="boton-bar bar2" href="#">Grid Container</a>
                 </li>
                 <li>
-                    <a class="boton-bar bar3" href="#">Paso 3</a>
+                    <a class="boton-bar bar3" href="#">Grid Item</a>
                 </li>
             </ul>
         </nav>
@@ -35,51 +35,73 @@
         <main>
             <hr />
 
-            <h2>Elemento de cuadrícula CSS:</h2>
+            <h2>Módulo de diseño de cuadrícula CSS</h2>
 
-            <div class="caja-grid">
-                <div class="item aitem1">1</div>
-                <div class="item aitem2">2</div>
-                <div class="item aitem3">3</div>
-                <div class="item aitem4">4</div>
-                <div class="item aitem5">5</div>
+            <div class="container-grid1">
+                <div class="aitem1">Header</div>
+                <div class="aitem2">Menu</div>
+                <div class="aitem3">Main</div>
+                <div class="aitem4">Right</div>
+                <div class="aitem5">Footer</div>
             </div>
 
-            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_item" target="_blank" class="boton-vinculo">Check!</a>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named" target="_blank" class="boton-vinculo">Check!</a>
 
             <hr />
 
-            <h2>Elementos secundarios (ítems)</h2>
+            <h2>Diseño de cuadrícula</h2>
 
-            <p>Un contenedor de cuadrícula contiene elementos de cuadrícula .</p>
+            <p>Las propiedades de la cuadrícula son compatibles con todos los navegadores modernos.</p>
 
-            <p>De forma predeterminada, un contenedor tiene un elemento de cuadrícula para cada columna, en cada fila, pero puede diseñar los elementos de cuadrícula para que abarquen varias columnas y/o filas.</p>
+            <img class="tabla-navegadores" src="/img/navegadores-grid.png" alt="Tabla de navegadores" />
 
             <hr />
 
-            <h2>La propiedad de la columna de cuadrícula:</h2>
+            <h2>Elementos de la cuadrícula</h2>
 
-            <p>La propiedad <span class="rojo">grid-column</span> define en qué columna(s) colocar un elemento.</p>
+            <p>Un diseño de cuadrícula consta de un elemento principal y uno o más elementos secundarios.</p>
 
-            <p>Tú defines dónde comenzará el elemento y dónde terminará.</p>
-
-            <div class="caja-grid">
-                <div class="item bitem1">1</div>
-                <div class="item bitem2">2</div>
-                <div class="item bitem3">3</div>
-                <div class="item bitem4">4</div>
-                <div class="item bitem5">5</div>
-                <div class="item bitem1">6</div>
-                <div class="item bitem2">7</div>
-                <div class="item bitem3">8</div>
-                <div class="item bitem4">9</div>
-                <div class="item bitem5">10</div>
-                <div class="item bitem1">11</div>
-                <div class="item bitem2">12</div>
-                <div class="item bitem3">13</div>
-                <div class="item bitem4">14</div>
-                <div class="item bitem5">15</div>
+            <div style="border-bottom-left-radius: 0; border-bottom-right-radius: 0" class="borde-caja">
+                <h3>Ejemplo</h3>
+                <div class="fondo-caja">
+                    <pre>
+&lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-container"</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>1&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>2&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>3&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>4&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>5&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>6&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>7&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>8&lt;<span class="rojo">/div</span>>
+  &lt;<span class="rojo">div</span> <span class="purpura">class=</span> <span class="verde">"grid-item"</span>>9&lt;<span class="rojo">/div</span>>
+&lt;<span class="rojo">/div</span>>                      
+                    </pre>
+                </div>
             </div>
+
+            <div style="border-top-left-radius: 0; border-top-right-radius: 0" class="borde-caja">
+                <div style="padding-bottom: 15px" class="fondo-caja">
+                    <div class="container-grid1">
+                        <div class="bitem1">1</div>
+                        <div class="bitem2">2</div>
+                        <div class="bitem3">3</div>
+                        <div class="bitem4">4</div>
+                        <div class="bitem5">5</div>
+                        <div class="bitem5">6</div>
+                        <div class="bitem5">7</div>
+                        <div class="bitem5">8</div>
+                        <div class="bitem5">9</div>
+                    </div>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>Mostrar propiedad</h2>
+
+            <p>Un elemento HTML se convierte en un contenedor de cuadrícula cuando su propiedad <span class="rojo">display</span> se establece en <span class="rojo">grid</span> o <span class="rojo">inline-grid</span>.</p>
         </main>
 
         <footer>
@@ -91,3 +113,4 @@
         </footer>
     </body>
 </html>
+
