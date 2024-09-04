@@ -53,6 +53,8 @@
 
             <p>Las propiedades de la cuadrícula son compatibles con todos los navegadores modernos.</p>
 
+            <br />
+
             <img class="tabla-navegadores" src="img/navegadores-grid.png" alt="Tabla de navegadores" />
 
             <hr />
@@ -60,6 +62,8 @@
             <h2>Elementos de la cuadrícula</h2>
 
             <p>Un diseño de cuadrícula consta de un elemento principal y uno o más elementos secundarios.</p>
+
+            <br />
 
             <div style="border-bottom-left-radius: 0; border-bottom-right-radius: 0" class="borde-caja">
                 <h3>Ejemplo</h3>
@@ -103,6 +107,8 @@
 
             <p>Un elemento HTML se convierte en un contenedor de cuadrícula cuando su propiedad <span class="rojo">display</span> se establece en <span class="rojo">grid</span> o <span class="rojo">inline-grid</span>.</p>
 
+            <br />
+
             <div class="borde-caja">
                 <h3>Ejemplo</h3>
                 <div class="fondo-caja">
@@ -131,31 +137,103 @@
 
             <br />
 
-            <p>Todos los elementos secundarios directos del contenedor de la cuadrícula se convierten automáticamente en <span style="font-style: italic">elementos de la cuadrícula</span> .</p>
+            <p>Todos los elementos secundarios directos del contenedor de la cuadrícula se convierten automáticamente en <span style="font-style: italic">grid items</span> .</p>
 
             <hr />
 
-            <h2>Columnas de cuadrícula</h2>
+            <h2>Grid Columns</h2>
 
-            <p>Las líneas verticales de los elementos de la cuadrícula se denominan <span style="font-style: italic">columnas</span> .</p>
+            <p>Las líneas verticales de los elementos de la cuadrícula se denominan <span style="font-style: italic">columns</span> .</p>
+
+            <br />
 
             <img class="img-columnas" src="img/grid_columns.png" alt="Cuadro de columnas" />
 
             <hr />
 
-            <h2>Filas de cuadrícula</h2>
+            <h2>Grid Rows</h2>
 
-            <p>Las líneas horizontales de los elementos de la cuadrícula se denominan <span style="font-style: italic">filas</span> .</p>
+            <p>Las líneas horizontales de los elementos de la cuadrícula se denominan <span style="font-style: italic">rows</span> .</p>
+
+            <br />
 
             <img class="img-filas" src="img/grid_rows.png" alt="Cuadro de filas" />
 
             <hr />
 
-            <h2>Huecos en la red</h2>
+            <h2>Grid Gaps</h2>
 
-            <p>Los espacios entre cada columna/fila se llaman <span style="font-style: italic">huecos</span> .</p>
+            <p>Los espacios entre cada columna/fila se llaman <span style="font-style: italic">gaps</span> .</p>
+
+            <br />
 
             <img class="img-gaps" src="img/grid_gaps.png" alt="Huecos de columnas" />
+
+            <br />
+
+            <p>Puede ajustar el tamaño del espacio utilizando una de las siguientes propiedades:</p>
+
+            <ul class="lista-general">
+                <li><span class="rojo">column-gap</span></li>
+                <li><span class="rojo">row-gap</span></li>
+                <li><span class="rojo">gap</span></li>
+            </ul>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>La propiedad <span class="rojo">column-gap</span> establece el espacio entre las columnas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">column-gap</span>: <span class="verde">50px</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column-gap" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>La propiedad <span class="rojo">row-gap</span> establece el espacio entre las filas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">row-gap</span>: <span class="verde">50px</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row-gap" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>La propiedad <span class="rojo">gap</span> es una forma abreviada de las propiedades <span class="rojo">row-gap</span> y <span class="rojo">column-gap</span>:</p>
+
+                <p>La propiedad <span class="rojo">gap</span> también se puede utilizar para establecer tanto el espacio entre filas como entre columnas en un solo valor:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">gap</span>: <span class="verde">50px</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
         </main>
 
         <footer>
