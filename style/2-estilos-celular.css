@@ -25,9 +25,9 @@
 .bar1 {
     color: orangered;
     text-shadow: 0 0 4px orangered;
-    border: 1px solid orangered;
+    border-bottom: 1px solid orangered;
     padding: 0 10px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .bar2:hover,
@@ -107,12 +107,14 @@ header {
 
 .img-columnas,
 .img-filas,
-.img-gaps {
+.img-gaps,
+.linea-cuadricula {
     display: block;
     width: 80%;
     margin: auto;
 }
 
-.img-gaps {
+.img-gaps,
+.linea-cuadricula {
     background-color: aliceblue;
 }
