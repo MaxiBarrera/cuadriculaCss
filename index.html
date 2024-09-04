@@ -234,6 +234,153 @@
                 </div>
                 <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap" target="_blank" class="boton-vinculo">Check!</a>
             </div>
+
+            <hr />
+
+            <h2>Grid Lines</h2>
+
+            <p>Las líneas entre columnas se llaman <span style="font-style: italic">column lines</span> .</p>
+
+            <p>Las líneas entre filas se llaman <span style="font-style: italic">row lines</span> .</p>
+
+            <br />
+
+            <img class="linea-cuadricula" src="img/grid_lines.png" alt="Cuadro lineas de cuadriculas" />
+
+            <br />
+
+            <p>Consulte los números de línea al colocar un elemento de cuadrícula en un contenedor de cuadrícula:</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Coloque un elemento de la cuadrícula en la línea de columna 1 y déjelo finalizar en la línea de columna 3:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-column-start</span>: <span class="verde">1</span>;
+  <span class="purpura">grid-column-end</span>: <span class="verde">3</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Coloque un elemento de la cuadrícula en la línea de fila 1 y déjelo finalizar en la línea de fila 3:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-row-start</span>: <span class="verde">1</span>;
+  <span class="purpura">grid-row-end</span>: <span class="verde">3</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>Todas las propiedades de cuadrícula CSS</h2>
+
+            <table>
+                <tr>
+                    <th class="rojo" style="width: 35%">Property</th>
+                    <th class="rojo">Description</th>
+                </tr>
+                <tr>
+                    <td class="purpura">column-gap</td>
+                    <td class="verde">Especifica el espacio entre las columnas.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">gap</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades de gap de fila y gap de columna.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns y grid-auto-flow.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-area</td>
+                    <td class="verde">Ya sea que especifiques un nombre para el elemento de la cuadrícula, o esta propiedad sea una forma abreviada para las propiedades de inicio de fila de cuadrícula, inicio de columna de cuadrícula, fin de fila de cuadrícula y fin de columna de cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-auto-columns</td>
+                    <td class="verde">Especifica un tamaño de columna por defecto</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-auto-flow</td>
+                    <td class="verde">Especifica cómo se insertan los elementos autocolocados en la cuadricula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-auto-rows</td>
+                    <td class="verde">Especifica un tamaño de fila por defecto.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-column</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades grid-column-start y grid-column-end</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-column-end</td>
+                    <td class="verde">Especifique dónde terminar el elemento de la cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-column-gap</td>
+                    <td class="verde">Especifica el tamaño del espacio entre columnas.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-column-start</td>
+                    <td class="verde">Especifique dónde comenzar el elemento de la cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-gap</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades de separación entre filas y separación entre columnas de la cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-row</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades grid-row-start y grid-row-end.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-row-end</td>
+                    <td class="verde">Especifique dónde terminar el elemento de la cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-row-gap</td>
+                    <td class="verde">Especifica el tamaño del espacio entre las filas.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-row-start</td>
+                    <td class="verde">Especifica dónde empezar el elemento de la cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-template</td>
+                    <td class="verde">Una propiedad abreviada para las propiedades grid-template-rows, grid-template-columns y grid-areas.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-template-areas</td>
+                    <td class="verde">Especifica cómo mostrar columnas y filas, utilizando elementos de cuadrícula con nombre.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-template-columns</td>
+                    <td class="verde">Especifica el tamaño de las columnas y cuántas columnas habrá en un diseño en cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">grid-template-rows</td>
+                    <td class="verde">Especifique el tamaño de las filas en un diseño de cuadrícula.</td>
+                </tr>
+                <tr>
+                    <td class="purpura">row-gap</td>
+                    <td class="verde">Especifique la separación entre las filas de la cuadrícula.</td>
+                </tr>
+            </table>
         </main>
 
         <footer>
@@ -245,4 +392,3 @@
         </footer>
     </body>
 </html>
-
