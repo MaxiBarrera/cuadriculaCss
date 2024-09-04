@@ -41,6 +41,9 @@ h1 {
     text-shadow: 3px 3px 2px black;
 }
 
+h2 {
+    font-size: 1.4rem;
+}
 h2,
 p {
     margin-bottom: 0.8em;
@@ -58,14 +61,15 @@ h3 {
 }
 
 pre {
-    font-family: fuente-pc !important;
+    font-family: fuente-pc;
+    font-size: 0.8rem;
 }
 
 main {
     width: 92%;
     margin: auto;
     margin-top: 15px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 /* estilos generales */
 
