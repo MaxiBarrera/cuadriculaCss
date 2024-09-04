@@ -58,9 +58,20 @@ h3 {
 }
 
 pre {
-    font-family: fuente-pc;
+    font-family: fuente-pc !important;
+}
+
+main {
+    width: 92%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 0.9rem;
 }
 /* estilos generales */
+
+.lista-general {
+    margin-left: 40px;
+}
 
 .cont-img {
     position: relative;
@@ -79,13 +90,6 @@ pre {
     color: lightseagreen;
     text-shadow: 0 0 10px blue;
     text-align: center;
-}
-
-main {
-    width: 92%;
-    margin: auto;
-    margin-top: 15px;
-    font-size: 0.8rem;
 }
 
 .boton-vinculo {
@@ -112,11 +116,6 @@ main {
 .purpura {
     color: rgb(236, 145, 236);
 }
-
-.verde {
-    color: rgb(112, 236, 112);
-}
-
 
 .verde {
     color: rgb(112, 236, 112);
