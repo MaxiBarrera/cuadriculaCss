@@ -41,9 +41,12 @@ h1 {
     text-shadow: 3px 3px 2px black;
 }
 
-h2,
+h2 {
+    font-size: 0.8rem;
+}    
 p {
     margin-bottom: 0.8em;
+    font-size: 0.9rem;
 }
 hr {
     border: 0px;
@@ -65,7 +68,6 @@ main {
     width: 92%;
     margin: auto;
     margin-top: 15px;
-    font-size: 0.9rem;
 }
 /* estilos generales */
 
