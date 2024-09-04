@@ -71,6 +71,28 @@ main {
     margin-top: 15px;
     font-size: 1rem;
 }
+table {
+    width: 100%;
+    box-shadow: 0 0 6px rgb(49, 47, 47);
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(49, 47, 47);
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
 /* estilos generales */
 
 .lista-general {
