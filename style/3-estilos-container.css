@@ -1,0 +1,53 @@
+.nav-chico {
+    width: 100%;
+    line-height: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navegador-horizontal {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 36px;
+    padding: 10px 0;
+}
+
+.boton-bar {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.bar2 {
+    color: orangered;
+    text-shadow: 0 0 4px orangered;
+    border-bottom: 1px solid orangered;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.bar1:hover,
+.bar3:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px aliceblue;
+}
+
+.container-grid1 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid1 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
