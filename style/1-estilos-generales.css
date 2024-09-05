@@ -63,7 +63,7 @@ h3 {
 pre {
     font-family: fuente-pc;
     font-size: 0.8rem;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 
 main {
