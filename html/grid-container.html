@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <link rel="stylesheet" href="../style/3-estilos-container.css" media="only screen and (max-width: 767px)" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>CSS Grid</title>
+    </head>
+</html>
+
+<body>
+    <nav class="nav-chico">
+        <ul class="navegador-horizontal">
+            <li>
+                <a class="boton-bar bar1" href="../index.html">Grid Intro</a>
+            </li>
+            <li>
+                <a class="boton-bar bar2" href="../html/grid-container.html">Grid Container</a>
+            </li>
+            <li>
+                <a class="boton-bar bar3" href="#">Grid Item</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="cont-img">
+            <img class="programador" src="../img/programador.png" alt="imagen de programador" />
+            <p class="titulo-programador">CSS Grid Item</p>
+        </div>
+    </header>
+
+    <main>
+        <hr />
+
+        <h2>Contenedor de cuadrícula CSS</h2>
+
+        <div class="container-grid1">
+            <div class="aitem1">1</div>
+            <div class="aitem2">2</div>
+            <div class="aitem3">3</div>
+            <div class="aitem4">4</div>
+            <div class="aitem5">5</div>
+            <div class="aitem6">6</div>
+            <div class="aitem7">7</div>
+            <div class="aitem8">8</div>
+        </div>
+
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_container" target="_blank" class="boton-vinculo">Check!</a>
+
+        <hr />
+
+        <h2>Contenedor de cuadrícula</h2>
+
+        <p>Para que un elemento HTML se comporte como un contenedor de cuadrícula, debes establecer la propiedad <span class="rojo">display</span> en <span class="rojo">grid</span> o <span class="rojo">inline-grid</span>.</p>
+
+        <p>Los contenedores de cuadrícula constan de elementos de cuadrícula, colocados dentro de columnas y filas.</p>
+
+        <hr />
+
+        <h2>La propiedad grid-template-columns</h2>
+
+        <p>La propiedad <span class="rojo">grid-template-columns</span> define el número de columnas en el diseño de su cuadrícula y puede definir el ancho de cada columna.</p>
+
+        <p>El valor es una lista separada por espacios, donde cada valor define el ancho de la columna respectiva.</p>
+
+        <p>Si desea que el diseño de su cuadrícula contenga 4 columnas, especifique el ancho de las 4 columnas o "automático" si todas las columnas deben tener el mismo ancho.</p>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <p>Haz una cuadrícula con 4 columnas:</p>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">grid-template-columns</span>: <span class="verde">auto auto auto auto</span>;
+}                
+                </pre>
+            </div>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns1" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+    </main>
+</body>
