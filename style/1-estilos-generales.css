@@ -63,6 +63,7 @@ h3 {
 pre {
     font-family: fuente-pc;
     font-size: 0.8rem;
+    white-space: nowrap;
 }
 
 main {
@@ -103,6 +104,14 @@ header {
     margin-top: 60px;
 }
 /* estilos generales */
+.enlaces {
+    color: orangered;
+    border-radius: 50%;
+    padding: 6px 8px;
+    text-shadow: 0 0 2px black;
+    margin: 24px 0 0 4px;
+    float: right;
+}
 
 .borde-caja {
     background-color: rgb(49, 47, 47);
