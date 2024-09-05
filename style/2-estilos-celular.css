@@ -36,15 +36,6 @@
     text-shadow: 0 0 4px aliceblue;
 }
 
-.enlaces {
-    color: orangered;
-    border-radius: 50%;
-    padding: 6px 8px;
-    text-shadow: 0 0 2px black;
-    margin: 24px 0 0 4px;
-    float: right;
-}
-
 .container-grid1 {
     background-color: orangered;
     padding: 6px;
