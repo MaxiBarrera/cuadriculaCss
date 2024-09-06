@@ -87,6 +87,188 @@
             </div>
             <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns1" target="_blank" class="boton-vinculo">Check!</a>
         </div>
+
+        <p class="fondo-texto"><strong>Nota:</strong> Si tiene más de 4 elementos en una cuadrícula de 4 columnas, la cuadrícula agregará automáticamente una nueva fila para colocar los elementos.</p>
+
+        <p>La propiedad <span class="rojo">grid-template-columns</span> también se puede utilizar para especificar el tamaño (ancho) de las columnas.</p>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <p>Establezca un tamaño para las 4 columnas:</p>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">grid-template-columns</span>: <span class="verde">80px 200px auto 40px</span>;
+}                
+                </pre>
+            </div>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns2" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <hr />
+
+        <h2>La propiedad grid-template-rows</h2>
+
+        <p>La propiedad <span class="rojo">grid-template-rows</span> define la altura de cada fila.</p>
+
+        <br />
+
+        <div class="container-grid2">
+            <div class="bitem1">1</div>
+            <div class="bitem2">2</div>
+            <div class="bitem3">3</div>
+            <div class="bitem4">4</div>
+            <div class="bitem5">5</div>
+            <div class="bitem6">6</div>
+            <div class="bitem7">7</div>
+            <div class="bitem8">8</div>
+        </div>
+
+        <br />
+
+        <p>El valor es una lista separada por espacios, donde cada valor define la altura de la fila respectiva:</p>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">grid-template-rows</span>: <span class="verde">80px 200px</span>;
+}                
+                </pre>
+            </div>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-rows" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <hr />
+
+        <h2>La propiedad justify-content</h2>
+
+        <p>La propiedad <span class="rojo">justify-content</span> se utiliza para alinear toda la cuadrícula dentro del contenedor.</p>
+
+        <br />
+
+        <div class="container-grid3">
+            <div class="citem1">1</div>
+            <div class="citem2">2</div>
+            <div class="citem3">3</div>
+            <div class="citem4">4</div>
+            <div class="citem5">5</div>
+            <div class="citem6">6</div>
+        </div>
+
+        <p class="fondo-texto"><strong>Nota:</strong> El ancho total de la cuadrícula debe ser menor que el ancho del contenedor para que la propiedad <span style="color: crimson">justify-content</span> tenga algún efecto.</p>
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">space-evenly</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">space-around</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-around" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">space-between</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-between" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">center</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_center" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">start</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_start" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <br />
+
+        <div class="borde-caja">
+            <h3>Ejemplo</h3>
+
+            <div class="fondo-caja">
+                <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">display</span>: <span class="verde">grid</span>;
+  <span class="purpura">justify-content</span>: <span class="verde">end</span>;
+}                    
+                </pre>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_end" target="_blank" class="boton-vinculo">Check!</a>
+        </div>
+
+        <hr />
     </main>
 
     <footer>
