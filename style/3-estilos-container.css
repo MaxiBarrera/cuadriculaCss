@@ -12,8 +12,8 @@
     text-align: center;
     justify-content: space-evenly;
     background-color: black;
-    height: 36px;
-    padding: 10px 0;
+    height: 45px;
+    padding: 14px 0;
 }
 
 .boton-bar {
@@ -40,6 +40,7 @@
     background-color: orangered;
     display: grid;
     grid-template-columns: auto auto auto auto;
+
     gap: 6px;
     padding: 6px;
 }
@@ -49,5 +50,42 @@
     color: black;
     text-align: center;
     padding: 20px 0;
+    font-size: 18px;
+}
+
+.container-grid2 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 80px 200px;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid2 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.container-grid3 {
+    background-color: orangered;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 100px;
+    padding: 10px;
+    height: 150px;
+    line-height: 40px;
+}
+
+.container-grid3 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
     font-size: 18px;
 }
