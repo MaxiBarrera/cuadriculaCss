@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <link rel="stylesheet" href="../style/4-estilos-gridItem.css" media="only screen and (max-width: 767px)" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>CSS Grid Item</title>
+    </head>
+
+    <body>
+        <nav class="nav-chico">
+            <ul class="navegador-horizontal">
+                <li>
+                    <a class="boton-bar bar1" href="../index.html">Grid Intro</a>
+                </li>
+                <li>
+                    <a class="boton-bar bar2" href="../html/grid-container.html">Grid Container</a>
+                </li>
+                <li>
+                    <a class="boton-bar bar3" href="../html/grid-item.html">Grid Item</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="cont-img">
+                <img class="programador" src="../img/programador.png" alt="imagen de programador" />
+                <p class="titulo-programador">CSS Grid Item</p>
+            </div>
+        </header>
+
+        <main>
+            <hr />
+
+            <h2>CSS Grid Item</h2>
+
+            <div class="container-grid1">
+                <div class="aitem1">1</div>
+                <div class="aitem2">2</div>
+                <div class="aitem3">3</div>
+                <div class="aitem4">4</div>
+                <div class="aitem5">5</div>
+            </div>
+
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_item" target="_blank" class="boton-vinculo">Check!</a>
+
+            <hr />
+
+            <h2>Elementos secundarios (ítems)</h2>
+
+            <p>Un contenedor de cuadrícula contiene elementos de cuadrícula .</p>
+
+            <p>De forma predeterminada, un contenedor tiene un elemento de cuadrícula para cada columna, en cada fila, pero puede diseñar los elementos de cuadrícula para que abarquen varias columnas y/o filas.</p>
+
+            <hr />
+
+            <h2>La propiedad de la columna de cuadrícula:</h2>
+
+            <p>La propiedad <span class="rojo">grid-column</span> define en qué columna(s) colocar un elemento.</p>
+
+            <p>Tú defines dónde comenzará el elemento y dónde terminará.</p>
+
+            <br />
+
+            <div class="container-grid2">
+                <div class="bitem1">1</div>
+                <div class="bitem2">2</div>
+                <div class="bitem3">3</div>
+                <div class="bitem4">4</div>
+                <div class="bitem5">5</div>
+                <div class="bitem6">6</div>
+                <div class="bitem7">7</div>
+                <div class="bitem8">8</div>
+                <div class="bitem9">9</div>
+                <div class="bitem10">10</div>
+                <div class="bitem11">11</div>
+                <div class="bitem12">12</div>
+                <div class="bitem13">13</div>
+                <div class="bitem14">14</div>
+                <div class="bitem15">15</div>
+            </div>
+
+            <p class="fondo-texto"><strong>Nota</strong>: La propiedad <span style="color: red">grid-column</span> es una forma abreviada de propiedad para las propiedades <span style="color: red">grid-column-start</span> y <span style="color: red">grid-column-end</span>.</p>
+
+            <p>Para colocar un elemento, puede hacer referencia a <span style="font-style: italic">los números de línea</span> o utilizar la palabra clave "span" para definir cuántas columnas abarcará el elemento.</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item1" comience en la columna 1 y termine antes de la columna 5:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-column</span>: <span class="verde">1 / 5</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column_line" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item1" comience en la columna 1 y abarque 3 columnas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-column</span>: <span class="verde">1 / span 3</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item2" comience en la columna 2 y abarque 3 columnas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item2</span> {
+  <span class="purpura">grid-column</span>: <span class="verde">2 / span 3</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>La propiedad grid-row:</h2>
+
+            <p>La propiedad <span class="rojo">grid-row</span> define en qué fila colocar un elemento.</p>
+
+            <p>Tú defines dónde comenzará el elemento y dónde terminará.</p>
+
+            <br />
+
+            <div class="container-grid3">
+                <div class="citem1">1</div>
+                <div class="citem2">2</div>
+                <div class="citem3">3</div>
+                <div class="citem4">4</div>
+                <div class="citem5">5</div>
+                <div class="citem6">6</div>
+                <div class="citem7">7</div>
+                <div class="citem8">8</div>
+                <div class="citem9">9</div>
+                <div class="citem10">10</div>
+                <div class="citem11">11</div>
+                <div class="citem12">12</div>
+                <div class="citem13">13</div>
+                <div class="citem14">14</div>
+                <div class="citem15">15</div>
+                <div class="citem16">16</div>
+            </div>
+
+            <p class="fondo-texto"><strong>Nota</strong>: La propiedad <span style="color: red">grid-row</span> es una forma abreviada de propiedad para las propiedades <span style="color: red">grid-row-start</span> y <span style="color: red">grid-row-end</span>.</p>
+        </main>
+
+        <footer>
+            <i class="fa-brands fa-instagram enlaces"></i>
+            <i class="fa-brands fa-x-twitter enlaces"></i>
+            <i class="fa-brands fa-tiktok enlaces"></i>
+            <i class="fa-brands fa-facebook-f enlaces"></i>
+            <i class="fa-brands fa-discord enlaces"></i>
+        </footer>
+    </body>
+</html>
