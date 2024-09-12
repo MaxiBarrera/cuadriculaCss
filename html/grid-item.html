@@ -169,6 +169,104 @@
             </div>
 
             <p class="fondo-texto"><strong>Nota</strong>: La propiedad <span style="color: red">grid-row</span> es una forma abreviada de propiedad para las propiedades <span style="color: red">grid-row-start</span> y <span style="color: red">grid-row-end</span>.</p>
+
+            <p>Para colocar un elemento, puede hacer referencia a <span style="font-style: italic">los números de línea</span> o utilizar la palabra clave "span" para definir cuántas filas abarcará el elemento:</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item1" comience en la fila-línea 1 y termine en la fila-línea 4:</p>
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-row</span>: <span class="verde">1 / 4</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row1" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item1" comience en la fila 1 y abarque 2 filas:</p>
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-row</span>: <span class="verde">1 / span 2</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>La propiedad del área de cuadrícula</h2>
+
+            <p>La propiedad <span class="rojo">grid-area</span> se puede utilizar como una propiedad abreviada para las propiedades <span class="rojo">grid-row-start</span>, <span class="rojo">grid-column-start</span>, <span class="rojo">grid-row-end</span> y <span class="rojo">grid-column-end</span>.</p>
+
+            <br />
+
+            <div class="container-grid3">
+                <div class="ditem1">1</div>
+                <div class="ditem2">2</div>
+                <div class="ditem3">3</div>
+                <div class="ditem4">4</div>
+                <div class="ditem5">5</div>
+                <div class="ditem6">6</div>
+                <div class="ditem7">7</div>
+                <div class="ditem8">8</div>
+                <div class="ditem9">9</div>
+                <div class="ditem10">10</div>
+                <div class="ditem11">11</div>
+                <div class="ditem12">12</div>
+                <div class="ditem13">13</div>
+                <div class="ditem14">14</div>
+                <div class="ditem15">15</div>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Haga que "item8" comience en la fila-línea 1 y la columna-línea 2, y termine en la fila-línea 5 y la columna-línea 6:</p>
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item8</span> {
+  <span class="purpura">grid-area</span>: <span class="verde">1 / 2 / 5 / 6</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area1" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item8" comience en la fila-línea 2 y la columna-línea 1, y abarque 2 filas y 3 columnas:</p>
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item8</span> {
+  <span class="purpura">grid-area</span>: <span class="verde">2 / 1 / span 2 / span 3</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>Nombrar elementos de la cuadrícula</h2>
+
+            <p>La propiedad <span class="rojo">grid-area</span> también se puede utilizar para asignar nombres a los elementos de la cuadrícula.</p>
         </main>
 
         <footer>
