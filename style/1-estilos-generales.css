@@ -103,10 +103,18 @@ footer {
 header {
     margin-top: 60px;
 }
+
+i:hover {
+    text-shadow: 0 0 2px white;
+}
 /* estilos generales */
+.lista-enlaces {
+    list-style: none;
+    overflow: hidden;
+}
+
 .enlaces {
     color: orangered;
-    border-radius: 50%;
     padding: 6px 8px;
     text-shadow: 0 0 2px black;
     margin: 24px 0 10px 4px;
