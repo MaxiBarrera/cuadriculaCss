@@ -108,3 +108,75 @@
 .ditem8 {
     grid-area: 1 / 2/5/6;
 }
+
+.container-grid4 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid4 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.eitem1 {
+    grid-column: 1 / span 3;
+}
+
+.eitem2 {
+    grid-row: 2 / span 2;
+}
+
+.eitem5 {
+    grid-column: 2 / span 2;
+}
+
+.container-grid5 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid5 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.fitem1 {
+    grid-column: 3 / span 1;
+}
+
+.fitem2 {
+    grid-column: 3 / span 1;
+}
+
+.fitem3 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.fitem4 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.fitem5 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.fitem6 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
