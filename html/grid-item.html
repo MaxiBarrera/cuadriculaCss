@@ -267,14 +267,196 @@
             <h2>Nombrar elementos de la cuadrícula</h2>
 
             <p>La propiedad <span class="rojo">grid-area</span> también se puede utilizar para asignar nombres a los elementos de la cuadrícula.</p>
+
+            <br />
+
+            <div class="container-grid4">
+                <div class="eitem1">Header</div>
+                <div class="eitem2">Menu</div>
+                <div class="eitem3">Main</div>
+                <div class="eitem4">Right</div>
+                <div class="eitem5">Footer</div>
+            </div>
+
+            <br />
+
+            <p>Se puede hacer referencia a los elementos de la cuadrícula con nombre mediante la propiedad <span class="rojo">grid-template-areas</span> del contenedor de la cuadrícula.</p>
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>El elemento 1 recibe el nombre "myArea" y abarca las cinco columnas en un diseño de cuadrícula de cinco columnas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-area</span>: <span class="verde">myArea</span>;
+}
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">grid-template-areas</span>: <span class="verde">'myArea myArea myArea myArea myArea'</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <p>Cada fila está definida por apóstrofos (' ')</p>
+
+            <p>Las columnas de cada fila se definen dentro de los apóstrofos, separadas por un espacio.</p>
+
+            <p class="fondo-texto"><strong>Nota</strong>: Un signo de punto representa un elemento de la cuadrícula sin nombre.</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Deje que "myArea" abarque dos columnas en un diseño de cuadrícula de cinco columnas (los signos de punto representan elementos sin nombre):</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> {
+  <span class="purpura">grid-area</span>: <span class="verde">myArea</span>;
+}
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">grid-template-areas</span>: <span class="verde">'myArea myArea . . .'</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named1" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <p>Para definir dos filas, defina la columna de la segunda fila dentro de otro conjunto de apóstrofos:</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Hacer que "item1" abarque dos columnas y dos filas:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">grid-template-areas</span>: <span class="verde">'myArea myArea . . .' 'myArea myArea . . .'</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <p>Nombra todos los elementos y crea una plantilla de página web lista para usar:</p>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> { <span class="purpura">grid-area</span>: <span class="verde">header</span>; }
+<span class="rojo">.item2</span> { <span class="purpura">grid-area</span>: <span class="verde">menu</span>; }
+<span class="rojo">.item3</span> { <span class="purpura">grid-area</span>: <span class="verde">main</span>; }
+<span class="rojo">.item4</span> { <span class="purpura">grid-area</span>: <span class="verde">right</span>; }
+<span class="rojo">.item5</span> { <span class="purpura">grid-area</span>: <span class="verde">footer</span>; }
+
+<span class="rojo">.grid-container</span> {
+  <span class="purpura">grid-template-areas</span>:
+    <span class="verde">'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'</span>;
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <hr />
+
+            <h2>El orden de los elementos</h2>
+
+            <p>El diseño de cuadrícula nos permite colocar los elementos en cualquier lugar que queramos.</p>
+
+            <p class="fondo-texto">El primer elemento del código HTML no tiene por qué aparecer como el primer elemento de la cuadrícula.</p>
+
+            <br />
+
+            <div class="container-grid5">
+                <div class="fitem1">1</div>
+                <div class="fitem2">2</div>
+                <div class="fitem3">3</div>
+                <div class="fitem4">4</div>
+                <div class="fitem5">5</div>
+                <div class="fitem6">6</div>
+            </div>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">.item1</span> { <span class="purpura">grid-area</span>: <span class="verde">1 / 3 / 2 / 4</span>; }
+<span class="rojo">.item2</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 3 / 3 / 4</span>; }
+<span class="rojo">.item3</span> { <span class="purpura">grid-area</span>: <span class="verde">1 / 1 / 2 / 2</span>; }
+<span class="rojo">.item4</span> { <span class="purpura">grid-area</span>: <span class="verde">1 / 2 / 2 / 3</span>; }
+<span class="rojo">.item5</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 1 / 3 / 2</span>; }
+<span class="rojo">.item6</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 2 / 3 / 3</span>; }                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
+
+            <br />
+
+            <p>Puede reorganizar el orden para determinados tamaños de pantalla mediante consultas de medios:</p>
+
+            <br />
+
+            <div class="borde-caja">
+                <h3>Ejemplo</h3>
+
+                <div class="fondo-caja">
+                    <pre>
+<span class="rojo">@media only screen and (max-width: 500px)</span> {
+  <span class="rojo">.item1</span> { <span class="purpura">grid-area</span>: <span class="verde">1 / span 3 / 2 / 4</span>; }
+  <span class="rojo">.item2</span> { <span class="purpura">grid-area</span>: <span class="verde">3 / 3 / 4 / 4</span>; }
+  <span class="rojo">.item3</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 1 / 3 / 2</span>; }
+  <span class="rojo">.item4</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 2 / span 2 / 3</span>; }
+  <span class="rojo">.item5</span> { <span class="purpura">grid-area</span>: <span class="verde">3 / 1 / 4 / 2</span>; }
+  <span class="rojo">.item6</span> { <span class="purpura">grid-area</span>: <span class="verde">2 / 3 / 3 / 4</span>; }
+}                        
+                    </pre>
+                </div>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order2" target="_blank" class="boton-vinculo">Check!</a>
+            </div>
         </main>
 
+        <br />
+
         <footer>
-            <i class="fa-brands fa-instagram enlaces"></i>
-            <i class="fa-brands fa-x-twitter enlaces"></i>
-            <i class="fa-brands fa-tiktok enlaces"></i>
-            <i class="fa-brands fa-facebook-f enlaces"></i>
-            <i class="fa-brands fa-discord enlaces"></i>
+            <ul class="lista-enlaces">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram enlaces"></i></a>
+                </li>
+                <li>
+                    <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter enlaces"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/es?lang=es" target="_blank"><i class="fa-brands fa-tiktok enlaces"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f enlaces"></i></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.discord&hl=es_AR" target="_blank"><i class="fa-brands fa-discord enlaces"></i></a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
