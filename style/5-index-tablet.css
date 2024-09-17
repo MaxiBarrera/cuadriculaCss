@@ -40,6 +40,7 @@
     position: relative;
 }
 .programador {
+    padding-top: 20px;
     display: block;
     width: 68%;
     margin: auto;
@@ -87,7 +88,7 @@
 }
 
 .tabla-navegadores {
-    width: 72%;
+    width: 60%;
     height: auto;
     box-shadow: 0 0 4px crimson;
 }
@@ -97,7 +98,7 @@
 .img-gaps,
 .linea-cuadricula {
     display: block;
-    width: 56%;
+    width: 45%;
     margin: auto;
 }
 
