@@ -1,0 +1,108 @@
+.nav-chico {
+    width: 100%;
+    line-height: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navegador-horizontal {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 60px;
+    padding: 18px 0;
+}
+
+.boton-bar {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.bar1 {
+    color: orangered;
+    text-shadow: 0 0 4px orangered;
+    border-bottom: 1px solid orangered;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.bar2:hover,
+.bar3:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px aliceblue;
+}
+
+.cont-img {
+    position: relative;
+}
+.programador {
+    padding-top: 25px;
+    display: block;
+    width: 55%;
+    margin: auto;
+    filter: blur(0.5px);
+}
+
+.titulo-programador {
+    font-family: fuente-header;
+    font-size: 4rem;
+    z-index: 1;
+    color: lightseagreen;
+    text-shadow: 0 0 10px blue;
+    text-align: center;
+}
+
+.container-grid1 {
+    background-color: orangered;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+}
+
+.container-grid1 > div {
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 18px;
+}
+
+.aitem1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.aitem2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.aitem5 {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.tabla-navegadores {
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 4px crimson;
+}
+
+.img-columnas,
+.img-filas,
+.img-gaps,
+.linea-cuadricula {
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+.img-gaps,
+.linea-cuadricula {
+    background-color: aliceblue;
+}

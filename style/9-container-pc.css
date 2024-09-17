@@ -1,0 +1,128 @@
+.nav-chico {
+    width: 100%;
+    line-height: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navegador-horizontal {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 60px;
+    padding: 18px 0;
+}
+
+.boton-bar {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.bar2 {
+    color: orangered;
+    text-shadow: 0 0 4px orangered;
+    border-bottom: 1px solid orangered;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.bar1:hover,
+.bar3:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px aliceblue;
+}
+
+.cont-img {
+    position: relative;
+}
+.programador {
+    padding-top: 25px;
+    display: block;
+    width: 55%;
+    margin: auto;
+    filter: blur(0.5px);
+}
+
+.titulo-programador {
+    font-family: fuente-header;
+    font-size: 4rem;
+    z-index: 1;
+    color: lightseagreen;
+    text-shadow: 0 0 10px blue;
+    text-align: center;
+}
+
+.container-grid1 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid1 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.container-grid2 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 80px 200px;
+    gap: 6px;
+    padding: 6px;
+}
+
+.container-grid2 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.container-grid3 {
+    background-color: orangered;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 100px;
+    padding: 10px;
+    height: 150px;
+    line-height: 40px;
+}
+
+.container-grid3 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container-grid4 {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    height: 250px;
+    padding: 6px;
+    gap: 6px;
+}
+
+.container-grid4 > div {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
